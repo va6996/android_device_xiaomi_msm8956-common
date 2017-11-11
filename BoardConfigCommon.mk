@@ -57,7 +57,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8956
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+#BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -104,8 +104,8 @@ TARGET_TS_MAKEUP := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
+#BOARD_USES_CYANOGEN_HARDWARE := true
+#BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
     $(VENDOR_PATH)/cmhw
 
@@ -187,7 +187,7 @@ TARGET_POWERHAL_VARIANT := qcom
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 
 # Qualcomm
-BOARD_USES_QCOM_HARDWARE := true
+#BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 TARGET_USE_SDCLANG := true
 
@@ -201,8 +201,8 @@ PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true

@@ -66,12 +66,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 # ANT+
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
     liboverlay
 
 # Doze mode
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     XiaomiDoze
 
 # Face detection extension
