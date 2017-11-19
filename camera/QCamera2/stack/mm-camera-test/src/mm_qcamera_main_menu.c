@@ -1426,7 +1426,7 @@ int set_flash_mode (mm_camera_lib_handle *lib_handle, int action_param) {
             break;
         case FLASH_MODE_TORCH:
             printf("\n FLASH_MODE_TORCH\n");
-            type = CAM_ISO_MODE_100;
+            type = (cam_flash_mode_t)CAM_ISO_MODE_100;
             break;
         default:
             break;

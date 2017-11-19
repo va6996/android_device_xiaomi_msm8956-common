@@ -177,6 +177,7 @@ int createEncodingSession(mm_camera_test_obj_t *test_obj,
  *
  *
  **/
+/*
 static void mm_app_snapshot_metadata_notify_cb(mm_camera_super_buf_t *bufs,
   void *user_data)
 {
@@ -193,7 +194,7 @@ static void mm_app_snapshot_metadata_notify_cb(mm_camera_super_buf_t *bufs,
   }
   frame = bufs->bufs[0];
 
-  /* find channel */
+  * find channel *\/
   for (i = 0; i < MM_CHANNEL_TYPE_MAX; i++) {
     if (pme->channels[i].ch_id == bufs->ch_id) {
       channel = &pme->channels[i];
@@ -206,7 +207,7 @@ static void mm_app_snapshot_metadata_notify_cb(mm_camera_super_buf_t *bufs,
     return;
   }
 
-  /* find meta stream */
+  * find meta stream *\/
   for (i = 0; i < channel->num_streams; i++) {
     if (channel->streams[i].s_config.stream_info->stream_type == CAM_STREAM_TYPE_METADATA) {
       p_stream = &channel->streams[i];
@@ -219,7 +220,7 @@ static void mm_app_snapshot_metadata_notify_cb(mm_camera_super_buf_t *bufs,
     return;
   }
 
-  /* find meta frame */
+  * find meta frame *\/
   for (i = 0; i < bufs->num_bufs; i++) {
     if (bufs->bufs[i]->stream_id == p_stream->s_id) {
       frame = bufs->bufs[i];
@@ -228,7 +229,7 @@ static void mm_app_snapshot_metadata_notify_cb(mm_camera_super_buf_t *bufs,
   }
 
   if (!pme->metadata) {
-    /* The app will free the metadata, we don't need to bother here */
+    * The app will free the metadata, we don't need to bother here *\/
     pme->metadata = malloc(sizeof(metadata_buffer_t));
     if (NULL == pme->metadata) {
         CDBG_ERROR("%s: malloc failed", __func__);
@@ -258,7 +259,7 @@ static void mm_app_snapshot_metadata_notify_cb(mm_camera_super_buf_t *bufs,
   }
   mm_app_cache_ops((mm_camera_app_meminfo_t *)frame->mem_info,
                    ION_IOC_INV_CACHES);
-}
+}*/
 
 static void mm_app_snapshot_notify_cb_raw(mm_camera_super_buf_t *bufs,
                                           void *user_data)
